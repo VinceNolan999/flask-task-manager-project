@@ -10,7 +10,7 @@
 				<div class="input-field col s12">
                     <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
 					<select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled selected>Choose Category</option>
+                        <option value="" disabled selected>Choose Category</option> 
                         {% for category in categories %}
                             <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                         {% endfor %}
@@ -60,10 +60,9 @@
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button class="btn waves-effect waves-light light-blue darken-1" type="submit">
-                    Add Task<i class="fas fa-plus-square right"></i>
+                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                        Add Task <i class="fas fa-plus-square right"></i>
                     </button>
-        
                 </div>
             </div>
         </form>
